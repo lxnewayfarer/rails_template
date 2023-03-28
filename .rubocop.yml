@@ -1,7 +1,8 @@
 require:
   - rubocop-rails
   - rubocop-rspec
-
+  - rubocop-capybara
+  
 inherit_from: .rubocop_todo.yml
 
 Metrics/MethodLength:
