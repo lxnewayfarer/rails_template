@@ -27,12 +27,13 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+gem 'rubocop', require: false
+gem 'rubocop-rails', require: false
+gem 'rubocop-rspec', require: false
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-
-  gem 'rubocop', '~> 1.30', require: false
-  gem 'rubocop-rails', require: false
 end
 
 group :development do
@@ -57,9 +58,11 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
+gem 'activeadmin'
 gem 'devise'
 
 gem 'grape', '~> 1.6'
+gem 'grape-swagger'
 
 gem 'jwt'
 

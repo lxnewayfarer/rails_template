@@ -3,11 +3,11 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  subject { build(:user) }
+  user { build(:user) }
 
-  context 'creating model' do
+  context 'when creating model' do
     it 'is valid' do
-      expect(subject.save).to be_truthy
+      expect(user.save).to be_truthy
     end
   end
 end
