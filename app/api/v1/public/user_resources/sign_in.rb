@@ -3,7 +3,7 @@
 module V1
   module Public
     module UserResources
-      # Sign in for users
+      # Sign in for users and return JWT token which allows to authenticate user
       class SignIn < Grape::API
         desc 'Sign In'
         params do

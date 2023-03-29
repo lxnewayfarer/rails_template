@@ -97,6 +97,10 @@ GEM
       responders
       warden (~> 1.2.3)
     diff-lcs (1.5.0)
+    dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
     dry-configurable (0.13.0)
       concurrent-ruby (~> 1.0)
       dry-core (~> 0.6)
@@ -142,8 +146,8 @@ GEM
     grape-swagger-entity (0.5.1)
       grape-entity (>= 0.6.0)
       grape-swagger (>= 1.2.0)
-    grape-swagger-rails (0.3.1)
-      railties (>= 3.2.12)
+    grape-swagger-rails (0.4.0)
+      railties (>= 6.0.6.1)
     has_scope (0.8.1)
       actionpack (>= 5.2)
       activesupport (>= 5.2)
@@ -190,9 +194,8 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.1)
     minitest (5.18.0)
-    msgpack (1.6.1)
+    msgpack (1.7.0)
     multi_json (1.15.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
@@ -208,8 +211,7 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.13.10)
-      mini_portile2 (~> 2.8.0)
+    nokogiri (1.13.10-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     parallel (1.22.1)
@@ -368,7 +370,7 @@ GEM
     zeitwerk (2.6.7)
 
 PLATFORMS
-  ruby
+  x86_64-linux
 
 DEPENDENCIES
   activeadmin
@@ -376,6 +378,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   devise
+  dotenv-rails
   factory_bot_rails
   grape
   grape-entity
@@ -407,4 +410,4 @@ RUBY VERSION
    ruby 2.6.3p62
 
 BUNDLED WITH
-   2.1.4
+   2.4.10

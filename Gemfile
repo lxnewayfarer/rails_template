@@ -61,6 +61,8 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'activeadmin'
 gem 'devise'
 
+gem 'dotenv-rails'
+
 gem 'grape'
 gem 'grape-entity'
 gem 'grape-swagger'

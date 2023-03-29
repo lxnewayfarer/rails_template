@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  user { build(:user) }
+  let(:user) { build(:user) }
 
   context 'when creating model' do
     it 'is valid' do
